@@ -320,40 +320,6 @@ pre code {
   font-size: 14px;
 }
 
-.tps-section:nth-child(1n+1) .tps-wrapper {
-  background: url("../images/img1.jpg") center center;
-  background-size: cover;
-}
-
-.tps-section:nth-child(2n+1) .tps-wrapper {
-  background:  url("../images/img2.jpg") center center;
-  background-size: cover;
-}
-
-.tps-section:nth-child(3n+1) .tps-wrapper {
-  background:  url("../images/img3.jpg") center center;
-  background-size: cover;
-}
-
-.tps-section:nth-child(4n+1) .tps-wrapper {
-  background:  url("../images/img4.jpg") center center;
-  background-size: cover;
-}
-
-.tps-section:nth-child(5n+1) .tps-wrapper {
-  background:  url("../images/img5.jpg") center center;
-  background-size: cover;
-}
-
-.tps-section:nth-child(6n+1) .tps-wrapper {
-  background:  url("../images/img6.jpg") center center;
-  background-size: cover;
-}
-
-.tps-section:nth-child(7n+1) .tps-wrapper {
-  background:  url("../images/img7.jpg") center center;
-  background-size: cover;
-}
 
 .header {
   overflow: hidden;
