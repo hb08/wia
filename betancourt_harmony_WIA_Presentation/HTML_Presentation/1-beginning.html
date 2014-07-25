@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Tilted Page Scroll Tutorial</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/styles/sunburst.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				
+                <section>
+                	<h1>Tilted Page Scroll</h1>
+					<h2>A plug-in by Pete R</h2>
+					<p>Covered by Harmony Betancourt for WIA</p>
+                </section>
+        		
+
+	            <section>
+	            	<h1>What is it?</h1>
+					<ul>
+						<li class="fragment"><a href="https://github.com/peachananr/tiltedpage_scroll">Located on Github</a><br/><span class="fragment">https://github.com/peachananr/tiltedpage_scroll</span></li>
+						<li class="fragment">Uses 
+							<ul>
+								<li class="fragment">Portfolios</li>
+								<li class="fragment">Image Galleries</li>
+							</ul>
+						</li>
+					</ul>
+	            </section>
+                
+				<!-- Vertical -->
+				<section>	
+	                <section>
+	                	<h1>Page Structure</h1>
+	                </section>
+	                <section>
+	                	<h2>Head</h2>
+						<pre><code>
+&#x9;&#x3C;!-- jQuery and Plugin calls --&#x3E;
+	&#x9;&#x3C;script src=&#x22;http://code.jquery.com/jquery-1.9.1.js&#x22;&#x3E;&#x3C;/script&#x3E;
+	&#x9;&#x3C;script type=&#x22;text/javascript&#x22; src=&#x22;js/jquery.tiltedpage-scroll.js&#x22;&#x3E;&#x3C;/script&#x3E;
+	&#x9;&#x3C;!-- CSS call for plugin --&#x3E;
+	&#x9;&#x3C;link href=&#x27;css/tiltedpage-scroll.css&#x27; rel=&#x27;stylesheet&#x27; type=&#x27;text/css&#x27;&#x3E;
+	&#x9;&#x3C;!-- CSS Stylesheet changes by me --&#x3E;
+	&#x9;&#x3C;link href=&#x27;css/style.css&#x27; rel=&#x27;stylesheet&#x27; type=&#x27;text/css&#x27;&#x3E;
+						</code>
+						</pre>
+	                </section>
+	                <section>
+	                	<h2>HTML</h2>
+						<pre><code>
+&#x3C;div class=&#x22;main&#x22;&#x3E; 
+	&#x3C;section class=&#x22;page1&#x22;&#x3E; 
+	   &#x3C;div class=&#x22;page_container&#x22;&#x3E;
+	   &#x3C;!-- First page content --&#x3E;
+	   &#x3C;/div&#x3E;
+	&#x9;&#x3C;/section&#x3E; 
+	&#x9;&#x3C;section class=&#x22;page2&#x22;&#x3E;
+	   &#x9;&#x3C;div class=&#x22;page_container&#x22;&#x3E;
+	   &#x3C;!-- Second page content --&#x3E;
+	   &#x3C;/div&#x3E; 
+	&#x9;&#x3C;/section&#x3E; 
+	&#x9;&#x3C;section class=&#x22;last-page&#x22;&#x3E; 
+	   &#x9;&#x3C;div class=&#x22;page_container&#x22;&#x3E;
+	   &#x3C;!-- Last page content --&#x3E;
+	   &#x3C;/div&#x3E;
+	&#x9;&#x3C;/section&#x3E; 
+&#x3C;/div&#x3E;		
+						</code>
+						</pre>
+	                </section>
+					<section>
+	                	<h2>jQuery</h2>
+						<pre><code>
+$(&#x22;.main&#x22;).tiltedpage_scroll({
+	sectionContainer: &#x22;&#x3E; section&#x22;,
+	angle: 50,
+	opacity: true,
+	scale: true,
+	outAnimation: true
+});	
+						</code>
+						</pre>
+					</section>
+					<section>
+						<h1>CSS</h1>
+						<pre><code>
+.tps-section:nth-child(1n+1) .tps-wrapper {
+	background: url(&#x22;../images/img1.jpg&#x22;) center center;
+	background-size: cover;
+}
+						</code>
+						</pre>
+					</section>
+				</section>
+				<!-- End Vertical -->
+				
+	            <section>
+	            	<h1>Put it all together</h1>
+	            </section>
+				
+	            <section>
+	            	<h1>Of Note</h1>
+					<ul>
+						<li class="fragment">Backgrounds repeat for every slide</li>
+						<li class="fragment">Easy to Edit</li>
+					</ul>	
+	            </section>
+				
+                <section>
+                	<h1>Tilted Page Scroll</h1>
+					<h2>A plug-in by Pete R</h2>
+					<p>Covered by Harmony Betancourt for WIA</p>
+					<p>Resources</p>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+                </section>
+			
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme || "moon", 
+				transition: Reveal.getQueryHash().transition || 'concave', 
+
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
