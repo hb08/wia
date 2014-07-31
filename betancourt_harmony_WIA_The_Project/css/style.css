@@ -1,0 +1,339 @@
+@import url(http://fonts.googleapis.com/css?family=Sancreek|Dosis:400,700|Devonshire|Smythe|Annie+Use+Your+Telescope);
+body {
+	color: #4e360c;
+	background: url('../image/bg.png') no-repeat;
+	background-size: cover;
+	font-family: 'Dosis', sans-serif;
+}
+a {	
+	color: #B4430B;
+	font-weight: 700;
+	text-decoration: none;
+}
+a:hover, .selected {
+	color: #399AB7;
+}
+header {
+	color: #FFE2B0;
+	background: none repeat scroll 0 0 #483006;
+	border-radius: 20px;
+	margin-bottom: 2%;
+	padding: 1%;
+	position: relative;
+	text-align: center;
+}
+ h1, header p {
+	margin: 0;
+}
+header h1 {
+	font: 4em 'Sancreek', cursive;
+	margin-bottom: 0;
+}
+header p {
+	font: 1.5em 'Smythe', cursive;
+}
+header p:first-of-type{
+	letter-spacing: 1px;
+	position: relative;
+	top: -.7em;
+}
+header p:last-of-type {
+	font: .8em  'Dosis', sans-serif;;
+	letter-spacing: 2px;
+}
+h1 {
+	color: #FFE2B0;
+	background: none repeat scroll 0 0 #483006;
+	border-radius: 20px;
+	margin-bottom: 2%;
+	position: relative;
+	text-align: center;
+}
+h1, .chart_label h2 {
+	font: 3em 'Smythe', cursive;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 3px;
+}
+#container {
+	background: rgba(200, 193, 151, 0.64);
+    border-radius: 18px;
+    margin: 3% auto;
+	margin: 2% auto;
+	padding: 2%;
+	width: 94%;
+}
+.welcome p {
+	font: 1.3em 'Annie Use Your Telescope', cursive;
+	margin: 1% 0;
+}
+.welcome p a {
+	display: inline-block;
+	padding: 0 1%;
+}
+p.sign {
+	font: 3em 'Devonshire', cursive;
+	margin: 0;
+	position: relative;
+}
+footer {
+	width: 100%;
+}
+footer p {
+	font-size: .8em;
+	margin: 0;
+	text-align: center;
+}
+footer a {
+	color: #C96330;
+}
+
+/*
+
+	Sections and Articles
+
+*/
+
+
+.row {
+	background: rgba(252, 230, 200, 0.37);
+    border-radius: 18px;
+	display: block;
+	margin-bottom: 2%;
+	padding: 2%;
+	vertical-align: top;
+}
+article {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	text-align: center;
+}
+article.thirty {
+	width: 30%;
+}
+article.fourty {
+	width: 40%;
+}
+article.fifty {
+    width: 50%;
+}
+article.sixty {
+    width: 60%;
+}
+article {
+    margin-left: 9%;
+}
+article:first-of-type{
+	margin-left: 0;
+}
+article > div {
+	display: inline-block;
+}
+
+/*
+
+	Map
+
+*/
+
+.map_hold {
+	background: url('../image/azmap.jpg') no-repeat 0 0;
+	background-size: cover;
+	border: 3px solid #5EA8BC;
+	width: 253px;
+	height: 300px;
+	position: relative;
+}
+.map_key {
+	margin-left: 5%;
+	vertical-align: top;	
+}
+.map_key > a {
+	display: block;
+	padding: 5%;
+	width: 100%;
+}
+.map_key > a:hover, .selected {
+	background: #FFDCAB;
+} 
+.location {
+	background: url('../image/bts/horseshoe.png') no-repeat 0 -27px;
+	cursor: pointer;
+	display:inline-block;
+	height: 26px;
+	position: absolute;
+	width: 30px;
+	z-index: 2;
+}
+.location:hover, a.location.selected {
+	background-position: 0 0;
+}
+
+
+/*
+
+	Chart
+
+*/
+dt strong, dd strong {
+	float: right;
+}
+dd {
+	margin-bottom: 5%;
+}
+.quotes {
+	margin-top: 7%;
+}
+.quotes dt, .quotes dd  {
+	font-size: 1.3em;
+	text-align: center;
+}
+.quotes dt:nth-child(1n+2) {
+	border-top: 1px solid #000;
+	margin-top: 7%;
+	padding-top: 2%;
+}
+.quotes dd {
+	font-family: 'Devonshire',cursive;
+	letter-spacing: 1px;
+}
+.prices dt {
+	background: #619F88;
+	font-weight: bolder;
+	font-size: 1.3em;
+	padding: 5px;
+}
+
+
+/* 
+
+	Hoverbox
+
+*/
+.clear_both {
+	clear: both;
+	line-height: 1px;
+}
+.gallery_data {
+	display: none;
+	padding: 40px;
+}
+.gallery_preload_area {
+	display: none;
+}
+
+.gallery_container {
+	 height: 460px;
+	 margin: 20px auto 5%;
+	 width: 100%;
+}
+
+.gallery_content {
+	margin: 0px;
+	padding: 15px 0px 1px 0px;
+	position: relative;
+}
+
+.gallery_thumbnails {
+	float: left;
+	width: 400px;
+}
+.gallery_thumbnails a {
+	border: 1px solid #555;	
+	display: block;
+	float: left;
+	height: 75px;
+	margin: 0px 23px 23px 0px;
+	width: 75px;
+}
+.gallery_thumbnails a:hover {
+	border-color: #fff;
+}
+.gallery_thumbnails a.gal_selected {
+	border-color: #5EA8BC;
+}
+.gallery_preview {
+	display: inline-block;
+	height: 330px;
+	width: 330px;	
+}
+.gallery_preview a {
+	background-color: #5EA8BC;
+	border: 3px solid #5EA8BC;
+	display: block;
+	height: 375px;
+	width: 375px;
+}
+.gallery_preview a:first-of-type {
+	border-bottom: none;
+}
+.gallery_preview a:last-of-type {
+	border-top: none;
+}
+.gallery_preview > a:nth-child(2) {
+	height: 6em;
+}
+.gallery_caption {
+	background: none repeat scroll 0 0 #5ea8bc;
+	height: 90px;
+	padding: 6px;
+	position: relative;
+		top: 2.6em;
+		left: 420px;
+	width: 366px;
+}
+.gallery_caption > p {
+	 margin: 0.5em auto;
+}
+a.zoom {
+	background: url(../images/template/link_zoom.png) no-repeat 0px 0px;
+	font-size: .8em;
+	padding: 0px 0px 5px 20px;
+	text-transform: uppercase;
+	text-decoration: none
+}
+
+
+/*
+	Gauges
+*/
+
+div#chart_summer table tbody tr td div div svg g text, div#chart_winter table tbody tr td div div svg g text {
+	font-size: 10px !important;
+}
+div#chart_summer table tbody tr td div div svg g g text, div#chart_winter table tbody tr td div div svg g g text {
+	font-size: 16px !important;
+}
+
+#changeGauge{
+	background: none repeat scroll 0 0 #b4430b;
+	border: medium none #483006;
+	border-radius: 10px;
+	box-shadow: 0 0 5px #ffe8dd;
+	color: #fff;
+	font-size: 1em;
+	height: 40px;
+	margin-top: 1em;
+}
+
+#seasonHead {
+	margin-bottom: .5em;
+}
+
+.img_hold {
+	border: 3px solid #5EA8BC;
+	display: block;
+	position: relative;	
+	margin: 0 auto;
+	width: 250px;
+	height: 182px;
+}
+
+.img_hold img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
